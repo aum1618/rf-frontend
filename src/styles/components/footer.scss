@@ -1,0 +1,79 @@
+@use "../variables/variables.scss";
+
+.dark-bg {
+  background-color: variables.$darkbg;
+  color: variables.$white;
+  padding: 79px 0;
+  .footer-logo {
+    .footer-para {
+      margin-top: 36px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.25px;
+      width: 60%;
+    }
+  }
+  .footer-links {
+    h4 {
+      font-weight: 600;
+      font-size: 24px;
+    }
+    ul {
+      padding: 0;
+      margin-top: 25px;
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.15px;
+      }
+    }
+    .social-imgs {
+      max-width: 125px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+  }
+}
+.yellow-bg {
+  background-color: variables.$yellowbg;
+  line-height: 58px;
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    color: variables.$white;
+    letter-spacing: 0.5px;
+  }
+  .logo-span{
+    margin-left: 10px;
+  }
+  .spans{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  .yellow-bg{
+    span{
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (min-width: 440px) {
+  .yellow-bg{
+    span{
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .yellow-bg{
+      text-align: center;
+  }
+}

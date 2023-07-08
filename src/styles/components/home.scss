@@ -1,0 +1,307 @@
+@use "../variables/variables.scss";
+
+.time-section {
+  background-color: variables.$white;
+  padding: 143px 0;
+  .paragraphs {
+    padding: 64px 68px 63px 29px;
+    background-color: variables.$white;
+    border: 1px solid #d7d7d7;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    h3 {
+      font-weight: 700;
+      font-size: 44px;
+      color: variables.$black;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: variables.$black;
+    }
+  }
+}
+.yellowbg {
+  background-color: variables.$yellowbg;
+  background-image: url("../../assets/images/coverYellow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  .analysis-heading {
+    font-weight: 700;
+    font-size: 44px;
+    color: variables.$black;
+  }
+  .blue-row {
+    gap: 30px;
+    padding: 38px 0;
+    .blue-cards {
+      background-color: variables.$primaryfont;
+      max-width: 360px;
+      padding: 30px;
+      height: 247px;
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.handshake-profit {
+  margin: 177px 0;
+  .profit-card {
+    background-color: variables.$white;
+    padding: 49px 29px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    max-width: 555px;
+    h2 {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      color: variables.$black;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      color: variables.$black;
+      margin-top: 27px;
+    }
+  }
+}
+.success-through {
+  padding: 125px 0;
+  h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: variables.$black;
+  }
+  .para-cols {
+    max-width: 480px;
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.15px;
+      color: variables.$primaryfont;
+    }
+  }
+}
+.performance-head {
+  h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: variables.$black;
+  }
+}
+.performances-tabs {
+  background: #f5f5f5;
+  padding: 60px 0;
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.25px;
+    color: variables.$primaryfont;
+  }
+  .percentage {
+    padding: 0 40px;
+    h2 {
+      padding: 20px 0;
+      border-bottom: 2px solid #e0b83c;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 54px;
+      color: variables.$darkbg;
+    }
+  }
+  p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #6b6b6b;
+    padding: 20px;
+    text-align: center;
+  }
+}
+.reviews {
+  padding: 170px 0;
+  .review {
+    h2 {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      color: variables.$black;
+      text-align: center;
+    }
+  }
+  .arrow-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    button {
+      background: transparent;
+      border: none;
+      margin: 0 5px;
+    }
+  }
+  .single-review {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 555px;
+    .image {
+      overflow: hidden;
+      width: 195px;
+    }
+    .description {
+      padding: 20px;
+      width: 360px;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.25px;
+        color: #4e4e4e;
+      }
+      .name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: variables.$yellowbg;
+      }
+      .stars {
+        display: flex;
+        padding: 5px;
+        border-radius: 4px;
+        height: 26px;
+        background: variables.$darkbg;
+      }
+    }
+  }
+}
+.form {
+  margin-bottom: 150px;
+  h3 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: variables.$black;
+  }
+  .inputs {
+    margin-top: 30px;
+    .custom-input {
+      background: #f8f8f8;
+      border: 1px solid #dedede;
+      border-radius: 4px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      letter-spacing: 0.15px;
+      padding: 17px 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .time-section {
+    .time-relative {
+      position: relative;
+    }
+    .paragraphs {
+      position: absolute;
+      top: 10%;
+    }
+  }
+  .profit-relative {
+    position: relative;
+  }
+  .profit-card {
+    position: absolute;
+    top: 20%;
+    right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .profit-card, .paragraphs {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .success-through {
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+    }
+  }
+  p{
+    font-size: 16px;
+  }
+  .time-section{
+    .paragraphs{
+      h3{
+        font-size: 32px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  .handshake-profit{
+    .profit-card{
+      h2{
+        font-size: 32px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  .yellowbg{
+    .analysis-heading{
+      font-size: 32px;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .success-through {
+    h2 {
+      font-size: 28px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  .time-section{
+    .paragraphs{
+      h3{
+        font-size: 28px;
+      }
+    }
+  }
+}

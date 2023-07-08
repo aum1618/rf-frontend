@@ -1,0 +1,30 @@
+@use "../variables/variables.scss";
+
+.cover-bg {
+  background-color: variables.$darkbg;
+  background-image: url("../../assets/images/cover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 116px 0;
+  color: variables.$white;
+  h1 {
+    font-weight: 600;
+    font-size: 44px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cover-bg{
+    h1{
+      font-size: 28px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}

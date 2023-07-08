@@ -1,0 +1,53 @@
+@use "../variables/variables.scss";
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 27px;
+  .contact-card {
+    min-height: 263px;
+    padding: 63px;
+    background: variables.$yellowbg;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38px;
+      color: variables.$darkbg;
+      margin: 10px 0;
+      text-align: center;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: variables.$darkbg;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-cards{
+    display: block;
+    .contact-card{
+      margin-top: 27px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact-cards{
+    .contact-card{
+      padding: 20px;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact-cards{
+    grid-template-columns: auto auto;
+  }
+}

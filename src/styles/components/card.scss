@@ -1,0 +1,79 @@
+@use "../variables/variables.scss";
+.currencies {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+  margin-bottom: 30px;
+  .currency {
+    width: 263px;
+    .image {
+      position: relative;
+      background-color: #000000;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 182px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .name {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: variables.$darkbg;
+        border-radius: 6px;
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: variables.$white;
+        text-transform: uppercase;
+      }
+      .date {
+        position: absolute;
+        background-color: variables.$yellowbg;
+        border-radius: 6px;
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        color: variables.$white;
+        bottom: 0;
+        left: 0;
+        width: max-content;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.15px;
+      color: variables.$black;
+      margin-top: 14px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.5px;
+      color: #3a3a3a;
+    }
+    .more {
+      display: flex;
+      justify-content: space-between;
+      .read {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: variables.$yellowbg;
+      }
+      .clicks {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: variables.$primaryfont;
+      }
+    }
+  }
+}

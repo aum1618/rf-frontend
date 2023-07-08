@@ -1,0 +1,37 @@
+.title {
+  font-size: 36px;
+  font-weight: 800;
+}
+.section1 {
+  padding: 50px 80px;
+}
+
+.question-section {
+  background-color: #e0b83c;
+  padding: 50px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 14px;
+}
+.answer-section {
+  padding: 50px 80px;
+}
+
+h4 {
+  font-weight: 700 !important;
+}
+h3 {
+  font-weight: 1000 !important;
+  
+  color: #003d8f;
+  padding-bottom: 5px;
+}
+p {
+  font-family: "Open Sans";
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.7;
+  letter-spacing: 0.12px;
+  padding-bottom: 12px;
+}
